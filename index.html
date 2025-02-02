@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            background-color: #071d12;
+            line-height: 2.0;
+            
+            
+        }
+
+        
+        .header {
+            font-size: 20px;
+            background-color: #071d12;
+            color: white;
+            text-align: center;
+            padding: 100px;
+        }
+        .nav {
+            display: flex;
+            justify-content: center ;
+            background: #082e16;
+            padding: 2px;
+            text-indent: 40px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            
+        }
+        .container {
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            
+
+        }
+        .about, .content {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            border: 1px solid #021610;
+            border-style: groove;
+        }
+        .about img, .content img {
+            width: 100%;
+            height: auto;
+            
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Maki's Website</h1>
+        <p1>Imari Calado</p1>
+        
+    </div>
+    <div class="nav">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+    </div>
+    <div class="container">
+        <div class="about"> 
+            <h2>About Maki</h2>
+            <img src="simaki.jpg" alt="About Me">
+        </div>
+        <div class="content">
+            <h2>Maki VS Mai</h2>
+            <p>Episode 17</p>
+            <img src="makiko.gif" alt="Content Image">
+        </div>
+    </div>
+</body>
+</html>
